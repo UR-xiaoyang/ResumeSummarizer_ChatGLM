@@ -1,0 +1,2 @@
+# ResumeSummarizer_ChatGLM
+基于ChatGLM的简历分析系统，是为方便公司对于人才快速筛选的一款AIGC项目
