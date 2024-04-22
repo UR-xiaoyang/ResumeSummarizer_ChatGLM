@@ -11,16 +11,3 @@ def 输出Excel(工程文件夹,data):
     df.to_excel(filename, index=False, engine='openpyxl')
 
     print(f"数据已导出到Excel文件：{filename}")
-
-# Debug
-# data = {
-#     '姓名': ['小\n美'],
-#     '年龄': [25],
-#     '学位': ['硕士'],
-#     '毕业学校': ['某知名大学'],
-#     '工龄': [None],  # 假设工龄数据不完整
-#     '项目经历': ['实习经历描述'],
-#     '总体分析': ['分析文本'],
-#     'AI建议': ['建议文本']
-# }
-# 输出Excel("/home/xiaoyang/project/基于ChatGLM的简历分析汇总系统/ResumeSummarizer_ChatGLM",data)
