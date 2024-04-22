@@ -8,7 +8,7 @@ def 输出Excel(工程文件夹,data):
     # 补空位
     for i in data:
         if len(data[i]) < len(data[longest_key]):
-            for i in range(len(data[longest_key]) - len(data[i])):
+            for j in range(len(data[longest_key]) - len(data[i])):
                 data[i].append("Null")
     # 将字典转换为DataFrame
     df = pd.DataFrame(data)
