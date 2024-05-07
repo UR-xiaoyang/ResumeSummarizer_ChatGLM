@@ -1,0 +1,5 @@
+pandas==2.2.2
+pdf2image==1.17.0
+python_docx==1.1.0
+Requests==2.31.0
+zhipuai==2.0.1
