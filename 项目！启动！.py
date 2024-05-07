@@ -24,6 +24,7 @@ print("请输入你的百度OCR的SECRET_KEY")
 # 用户选择简历文件夹
 print("请选择您的简历所在的文件夹")
 
+
 def 选择简历文件夹():
     root = tk.Tk()
     root.withdraw()  # 隐藏主窗口
@@ -32,6 +33,8 @@ def 选择简历文件夹():
 
 # 用户选择简历文件夹
 用户选择的文件夹 = 选择简历文件夹()
+print("请输入您的招聘岗位")
+岗位 = input("岗位：")
 
 if 用户选择的文件夹:  # 确保用户选择了文件夹
     print(f"您选择的文件夹是：{用户选择的文件夹}")
@@ -62,7 +65,7 @@ if 用户选择的文件夹:  # 确保用户选择了文件夹
                 content = file.read()
                 文本 = content
             print("读取")
-            结果 = 调用大模型(ChatGLM_API, 文本)
+            结果 = 调用大模型(ChatGLM_API, 文本, 岗位)
             数据处理到字典(结果.content)
     输出Excel(用户选择的文件夹, data)
 else:
