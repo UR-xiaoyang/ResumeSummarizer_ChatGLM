@@ -5,10 +5,14 @@
 
 所用技术栈：tkinter,pandas,zhipuai,urllib
 所使用的大模型：百度OCR标准识别，ChatGLM-4
-## V1.0更新日志
-* 正式从RPA软件中迁移到纯python中
+
+## V1.1更新日志
 * 使用API对大模型进行调用使得速度得到少许的提升
 * 使用了更加先进的ChatGLM4模型输出得更加的稳定
+* 废弃了V1.0版本
+* 修复了无法更换招聘岗位的问题
+* 发布第一个发布版V1.1
+* 导出了requirements.txt
 
 ## 启动项目
 ```bash
